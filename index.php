@@ -7,7 +7,7 @@ if(isset($_POST['reg_user'])){
   if(isset($_POST['agree-terms'])){
     if(validate($insert_data)==true){
       $data->insertdata('users', $insert_data);
-      header('Location: http://localhost/practice/ss/sucess.html');
+      header('Location: http://localhost/magebit-task/sucess.html');
     }else {
       $massage = Databases::$errors;
     }
@@ -32,7 +32,7 @@ if(isset($_POST['reg_user'])){
     <div class="col-left">
       <div class="nav-bar">
         <div class="brand">
-          <a href="main.php">pineapple.</a>
+          <a href="index.php">pineapple.</a>
         </div>
         <ul class="links">
           <li class="link"><a href='#'>About</a></li>
@@ -40,7 +40,7 @@ if(isset($_POST['reg_user'])){
           <li class="link"><a href='#'>Contact</a></li>
       </div>
       <div class="email-form">
-        <form action="main.php" class="emails" method="post" onsubmit="return MainValidation();" novalidate>
+        <form action="index.php" class="emails" method="post" onsubmit="return MainValidation();" novalidate>
           <h1>Subscribe to newsletter</h1>
           <h4>Subscribe to our newsletter and get 10% discount on pineapple glasses.</h4>
           <div class="email-field">
